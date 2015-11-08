@@ -1,6 +1,10 @@
 # pygraphdb-prototype
 A Distributed Graph Database
 
+## Requirements
+* Python 3
+* Pyparsing
+
 ## Getting Started
 1. Start a master process:
 
