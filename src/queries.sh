@@ -1,0 +1,7 @@
+python query.py "CREATE TYPE Actor MovieDB 'Actor'"
+python query.py "CREATE TYPE Movie MovieDB 'Movie'"
+python query.py "CREATE TYPE ActsIn MovieDB 'ActsIn'"
+python query.py "INSERT NODE Movie { Title: 'Inception', RunTime: '90min' }"
+python query.py "INSERT NODE Actor { Name: 'Leonardo Dicaprio', Height: '6.0' }"
+python query.py "INSERT EDGE ActsIn actor:Actor, movie:Movie where movie.Title == 'Inception' && actor.Name == 'Leonardo Dicaprio'"
+python query.py "FIND actor:Actor -:ActsIn> movie:Movie where actor.Name == 'Leonardo Dicaprio' return movie.Title, movie.RunTime"

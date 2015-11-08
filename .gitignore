@@ -1,0 +1,6 @@
+*.pyc
+.*~
+env/
+data/
+Thumbs.db
+.DS_Store
