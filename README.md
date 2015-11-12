@@ -21,7 +21,7 @@ A Distributed Graph Database
 3. Executing Queries:
   1. Command line:
 
-    `$ python manager.py {query}`
+    `$ python query.py {query}`
   2. Using the library:
 
     ```
